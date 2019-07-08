@@ -15,7 +15,7 @@ import collections
 # Constants
 NUM_DIMENSIONS = 3
 NUM_DIHEDRALS = 3
-BOND_LENGTHS = np.array([145.801, 152.326, 132.868], dtype='float32')
+BOND_LENGTHS = np.array([145.801/100, 152.326/100, 132.868/100], dtype='float32')
 BOND_ANGLES  = np.array([  2.124,   1.941,   2.028], dtype='float32')
 
 def dihedral_to_point(dihedral, r=BOND_LENGTHS, theta=BOND_ANGLES, name=None):
